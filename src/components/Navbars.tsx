@@ -12,7 +12,7 @@ import {
   GithubIcon,
   NearLogo,
   RefFinanceLogo,
-  ShitzuLogo,
+  ProtocolPawnLogo,
   TelegramIcon,
   TrisolarisLogo,
   TwitterIcon,
@@ -54,8 +54,8 @@ export default function Navbar() {
                 >
                   <img
                     className="h-8 w-auto mr-2"
-                    src={ShitzuLogo.src}
-                    alt="Shitzu Logo"
+                    src={ProtocolPawnLogo.src}
+                    alt="ProtocolPawn Logo"
                   />
                 </Link>
                 <div className="hidden sm:ml-6 sm:block">

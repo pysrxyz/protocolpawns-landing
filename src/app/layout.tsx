@@ -80,7 +80,6 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-black`}>
         <Navbar />
-        <Banner />
         {children}
         <Footer />
       </body>
