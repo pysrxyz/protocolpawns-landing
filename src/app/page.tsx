@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import UserFriendlyFeatures from "@/components/UserFriendlyFeatures";
 import Roadmap from "@/components/Roadmap";
 import BeginMatch from "@/components/BeginMatch";
+import FAQ from "@/components/FAQ";
 
 export default async function Home() {
   return (
@@ -27,6 +28,10 @@ export default async function Home() {
 
       <div className="w-full h-screen">
         <BeginMatch />
+      </div>
+
+      <div className="w-full">
+        <FAQ />
       </div>
     </main>
   );
