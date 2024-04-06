@@ -1,8 +1,8 @@
-import FeaturesHeroImage from "@/assets/features-hero.png";
+import FeaturesHeroImage from "@/assets/images/features-hero.png";
 
 export default function Strengths() {
   return (
-    <section className="w-full-h-full py-20 bg-[#0F0D0C]">
+    <section className="w-full-h-full py-20 bg-neutral-dark">
       <div className="flex flex-col items-center justify-center">
         <h2 className="text-center flex flex-col items-center">
           <div className="text-green-500 ">Our Strength</div>

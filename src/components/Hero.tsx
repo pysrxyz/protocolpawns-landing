@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="text-white pb-20">
+      <div className="text-white pb-20 z-20">
         <button
           // Big CTA  button White bg transparent text
           className="w-80 h-12 md:h-16 bg-white text-primary font-bold text-lg md:text-2xl rounded-2xl border border-white"

@@ -49,8 +49,7 @@ export function GithubIcon({ className }: { className?: string }) {
   );
 }
 
-export { default as ShitzuLogo } from "@/assets/shitzu.svg";
-export { default as ProtocolPawnLogo } from "@/assets/protocolpawn.svg";
+export { default as ProtocolPawnLogo } from "@/assets/icons/protocolpawn.svg";
 export { default as DexScreenerLogo } from "@/assets/dexscreener.png";
 export { default as NearLogo } from "@/assets/near.png";
 export { default as AuroraLogo } from "@/assets/aurora.png";

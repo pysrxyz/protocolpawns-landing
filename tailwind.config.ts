@@ -14,7 +14,7 @@ const config: Config = {
         primary: "#3d3d3d",
         "primary-dark": "#2aa876",
         "primary-light": "#ffffff",
-        "neutral-dark": "#333",
+        "neutral-dark": "#0F0D0C",
         "neutral-light": "#f2f2f2",
         bright: "#ffc107",
       },

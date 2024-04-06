@@ -14,8 +14,8 @@ import {
 } from "three";
 import { SVGLoader, SVGResultPaths } from "three/examples/jsm/Addons.js";
 
-import ProtocolPawnWireFrame from "@/assets/protocolpawn-wireframe.svg";
-import ProtocolPawnTokenDecal from "@/assets/protocolpawn-token-decal.svg";
+import ProtocolPawnWireFrame from "@/assets/scene/protocolpawn-wireframe.svg";
+import ProtocolPawnTokenDecal from "@/assets/scene/protocolpawn-token-decal.svg";
 
 const size = 223;
 
