@@ -2,6 +2,7 @@ import Strengths from "@/components/Strengths";
 import Hero from "@/components/Hero";
 import UserFriendlyFeatures from "@/components/UserFriendlyFeatures";
 import Roadmap from "@/components/Roadmap";
+import BeginMatch from "@/components/BeginMatch";
 
 export default async function Home() {
   return (
@@ -22,6 +23,10 @@ export default async function Home() {
 
       <div className="w-full pb-20">
         <Roadmap />
+      </div>
+
+      <div className="w-full h-screen">
+        <BeginMatch />
       </div>
     </main>
   );
