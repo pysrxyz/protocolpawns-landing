@@ -29,13 +29,13 @@ export default function FAQ() {
   return (
     <div className="">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-        <div className="mx-auto divide-y divide-white/10">
+        <div className="mx-auto">
           <div className="text-violet-400">Roadmap</div>
           <h2 className="text-white text-5xl font-bold my-4">
             {" "}
             Frequently asked questions
           </h2>
-          <dl className="mt-10 space-y-6 divide-y divide-white/10">
+          <dl className="mt-10 space-y-6">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
