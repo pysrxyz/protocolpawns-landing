@@ -2,32 +2,35 @@ import FeaturesHeroImage from "@/assets/images/features-hero.png";
 
 export default function Strengths() {
   return (
-    <section className="w-full-h-full py-20 bg-neutral-dark">
+    <section className="w-full-h-full py-20 px-4 bg-neutral-dark">
       <div className="flex flex-col items-center justify-center">
         <h2 className="text-center flex flex-col items-center">
           <div className="text-green-500 ">Our Strength</div>
-          <div className="text-white text-5xl font-semibold my-4">
-            What makes Protocal Pawns special ?
+          <div className="text-white text-3xl md:text-5xl font-semibold my-4">
+            What makes <br className="md:hidden" />
+             Protocal Pawns special?
           </div>
-          <div className="text-xl max-w-4xl text-gray-400">
+          <div className="text-base md:text-xl md:max-w-4xl text-gray-400">
             There are very few games that can run fully on-chain, chess can be
-            one of those. <br />
+            one of those. <br className="hidden md:block" />
             There will be a play2earn FT, that serves as a way to earn protocol
-            revenue from <br />
+            revenue from <br className="hidden md:block" />
             wager matches and others.
           </div>
         </h2>
 
-        <div className="w-full py-20">
-          <div className="flex justify-center">
-            <div>
+        <div className="w-full py-20 px-4">
+          <div className="flex flex-col md:flex-row justify-center">
+            <div className="mb-8 md:mb-0">
               <img src={FeaturesHeroImage.src} alt="Features Hero" />
             </div>
 
-            <div className="flex flex-col justify-evenly">
+            <div className="flex flex-col justify-evenly gap-9">
               <h3>
-                <div className="text-2xl text-white my-2">Transparency</div>
-                <div className="text-lg text-gray-400 max-w-md">
+                <div className="text-2xl text-white font-semibold my-4 md:my-2">
+                  Transparency
+                </div>
+                <div className="text-sm md:text-lg text-gray-400 max-w-md">
                   The transparency of blockchain websites brings a whole new
                   level of excitement to the chess game. Playing chess on a
                   blockchain give you full transparency of what players have
@@ -36,8 +39,10 @@ export default function Strengths() {
               </h3>
 
               <h3>
-                <div className="text-2xl text-white my-2">Well-known game</div>
-                <div className="text-lg text-gray-400 max-w-md">
+                <div className="text-2xl text-white font-semibold my-4 md:my-2">
+                  Well-known game
+                </div>
+                <div className="text-sm md:text-lg text-gray-400 max-w-md">
                   Chess is probably one of the most played and most well known
                   games around the world. It is easy for whether a beginner or
                   an expert player to start. Anyone can start enjoying it in no

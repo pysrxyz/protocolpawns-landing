@@ -31,7 +31,7 @@ export default async function Home() {
         <Roadmap />
       </div>
 
-      <div className="w-full h-screen">
+      <div className="w-full h-[60vh] md:h-screen">
         <BeginMatch />
       </div>
 

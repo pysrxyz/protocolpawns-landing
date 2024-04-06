@@ -10,20 +10,18 @@ export default function Hero() {
             <br />
             with Chess-on-chain
           </div>
-          <div className="text-base md:text-lg max-w-3xl font-light text-center text-white mt-5 leading-relaxed">
-            Challenge other wallets to play against <br />
+          <div className="text-sm md:text-lg max-w-sm md:max-w-3xl font-light text-center text-white mt-5 leading-relaxed">
+            Challenge other wallets to play against{" "}
+            <br className="hidden md:block" />
             you or play against an AI. Earn points by playing and winning.{" "}
-            <br />
+            <br className="hidden md:block" />
             Complete recurring quests and collect achievements!
           </div>
         </div>
       </div>
 
-      <div className="text-white pb-20 z-20">
-        <button
-          // Big CTA  button White bg transparent text
-          className="w-80 h-12 md:h-16 bg-white text-primary font-bold text-lg md:text-2xl rounded-2xl border border-white"
-        >
+      <div className="text-white pb-10 md:pb-20 z-20">
+        <button className="w-80 h-12 md:h-16 bg-white text-primary font-bold text-lg md:text-2xl rounded-2xl border border-white">
           Play Now
         </button>
       </div>

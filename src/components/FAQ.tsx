@@ -31,7 +31,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto">
           <div className="text-violet-400">Roadmap</div>
-          <h2 className="text-white text-5xl font-bold my-4">
+          <h2 className="text-white text-3xl md:text-5xl font-bold my-4">
             {" "}
             Frequently asked questions
           </h2>
@@ -40,7 +40,7 @@ export default function FAQ() {
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
                   <dt
-                    className={`bg-neutral-800 px-6 rounded-lg py-8 ${
+                    className={`bg-neutral-800 px-6 rounded-lg py-4 md:py-8 ${
                       !open && "hover:bg-neutral-600"
                     }`}
                   >

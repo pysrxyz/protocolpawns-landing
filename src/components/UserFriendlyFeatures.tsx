@@ -2,8 +2,8 @@ import ChessboardImage from "@/assets/images/chessboard.png";
 
 export default function UserFriendlyFeatures() {
   return (
-    <section className="py-12">
-      <div className="container mx-auto px-4">
+    <section className="py-12 px-4">
+      <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <h2 className="text-5xl font-bold text-white my-4">
             Simple and easy to play
@@ -14,7 +14,7 @@ export default function UserFriendlyFeatures() {
         </div>
 
         <div className="w-full py-20">
-          <div className="flex justify-center gap-20">
+          <div className="flex flex-col-reverse md:flex-row justify-center gap-20">
             <div className="flex flex-col justify-start">
               <h3>
                 <div className="text-lg text-gray-400 max-w-lg">
@@ -35,7 +35,7 @@ export default function UserFriendlyFeatures() {
               <img
                 src={ChessboardImage.src}
                 alt="Features Hero"
-                className="ml-auto max-w-lg"
+                className="ml-auto max-w-lg w-full"
               />
             </div>
           </div>

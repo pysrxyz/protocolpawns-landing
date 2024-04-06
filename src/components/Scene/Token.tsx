@@ -46,7 +46,7 @@ export default function ShitzuToken({
     <group
       ref={ref}
       position={[0, 0, 0]}
-      scale={innerWidth < 768 ? [4, 4, 4] : [3, 3, 3]}
+      scale={innerWidth < 768 ? [3, 3, 3] : [3, 3, 3]}
     >
       <mesh rotation={[Math.PI / 2, 0, 0]}>
         <cylinderGeometry args={[0.5, 0.5, tokenWidth, 256, 256, true]} />

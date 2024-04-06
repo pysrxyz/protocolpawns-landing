@@ -18,12 +18,12 @@ const roadmaps = [
 
 export default function Roadmap() {
   return (
-    <section>
+    <section className="px-4">
       <div>
         <h2 className="flex flex-col max-w-7xl mx-auto">
           <div className="text-sky-400">Roadmap</div>
           <div className="text-white text-5xl font-bold my-4">
-            Develop to the Next Steps
+            <span className="hidden md:inline">Develop to the</span> Next Steps
           </div>
           <div className="text-xl text-gray-400">
             In order to enhance the user experience the development roadmap for
