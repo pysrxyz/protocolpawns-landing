@@ -1,6 +1,7 @@
 import Strengths from "@/components/Strengths";
 import Hero from "@/components/Hero";
 import UserFriendlyFeatures from "@/components/UserFriendlyFeatures";
+import Roadmap from "@/components/Roadmap";
 
 export default async function Home() {
   return (
@@ -11,12 +12,16 @@ export default async function Home() {
         <div className="absolute bottom-0 left-0 w-full h-28 bg-gradient-to-t from-neutral-dark to-transparent" />
       </div>
 
-      <div className="w-full h-full min-h-screen">
+      <div className="w-full min-h-screen">
         <Strengths />
       </div>
 
-      <div className="w-full h-full min-h-screen">
+      <div className="w-full min-h-screen">
         <UserFriendlyFeatures />
+      </div>
+
+      <div className="w-full pb-20">
+        <Roadmap />
       </div>
     </main>
   );
