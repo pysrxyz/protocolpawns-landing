@@ -8,7 +8,9 @@ import { OrbitControls } from "@react-three/drei";
 export default function Scene() {
   return (
     <Canvas>
-      <Token />
+      <group position={[0, -0.25, 0]}>
+        <Token />
+      </group>
       {/* <ambientLight /> */}
       {/* point light that points to the center of the scene from bottom left */}
       <pointLight position={[-2, -2, 1]} intensity={10} />

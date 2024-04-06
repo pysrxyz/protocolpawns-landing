@@ -20,8 +20,9 @@ import {
 import Link from "next/link";
 
 const navigation = [
-  { name: "Blog", href: "/blog", current: false },
-  { name: "FAQ", href: "/#FAQ", current: false },
+  { name: "Our Strength", href: "/#strength", current: false },
+  { name: "Roadmap", href: "/#roadmap", current: false },
+  { name: "FAQs", href: "/#FAQ", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -30,11 +31,11 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="transparent">
+    <Disclosure as="nav" className="transparent container mx-auto">
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
+            <div className="relative flex h-16 items-center justify-between max-w-7xl mx-auto">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -57,6 +58,7 @@ export default function Navbar() {
                     src={ProtocolPawnLogo.src}
                     alt="ProtocolPawn Logo"
                   />
+                  Protocol Pawns
                 </Link>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -80,98 +82,13 @@ export default function Navbar() {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="hidden sm:flex space-x-4">
-                  <a
-                    href={"https://twitter.com/shitzucommunity"}
-                    className={classNames(
-                      "rounded-md py-2 text-sm font-medium"
-                    )}
-                    target="_blank"
-                  >
-                    <TwitterIcon className="h-6 w-6 text-primary" />
-                  </a>
-                  <a
-                    href={"https://t.me/Shitzu_Community"}
-                    className={classNames(
-                      "rounded-md py-2 text-sm font-medium"
-                    )}
-                    target="_blank"
-                  >
-                    <TelegramIcon className="h-6 w-6 text-primary" />
-                  </a>
-                  <a
-                    href={"https://github.com/Shitzu-Apes"}
-                    className={classNames(
-                      "rounded-md py-2 text-sm font-medium"
-                    )}
-                    target="_blank"
-                  >
-                    <GithubIcon className="h-6 w-6 text-primary" />
-                  </a>
-                </div>
-                {/* Profile dropdown */}
-                <Menu as="div" className="relative ml-5">
-                  <div>
-                    <Menu.Button className="relative flex text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 items-center text-primary">
-                      <Squares2X2Icon className="h-6 w-6" />
-                    </Menu.Button>
+                  {/* gradient bg to act like border of the button have gradient (from left gray to right white) */}
+                  <div className="bg-gradient-to-r from-gray-800 via-neutral-600 to-neutral-500 rounded-lg w-36 p-0.5">
+                    <button className="bg-black hover:bg-transparent text-white px-2 py-3 rounded-lg w-full">
+                      Play Now
+                    </button>
                   </div>
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-100"
-                    enterFrom="transform opacity-0 scale-95"
-                    enterTo="transform opacity-100 scale-100"
-                    leave="transition ease-in duration-75"
-                    leaveFrom="transform opacity-100 scale-100"
-                    leaveTo="transform opacity-0 scale-95"
-                  >
-                    <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-black py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <MenuItem href="https://www.trisolaris.io/#/swap?outputCurrency=0xB12BFcA5A55806AaF64E99521918A4bf0fC40802&inputCurrency=0x68e401B61eA53889505cc1366710f733A60C2d41">
-                        BUY on{" "}
-                        <img
-                          className="mx-2 h-4 w-auto rounded-full"
-                          src={TrisolarisLogo.src}
-                          alt="Ref Finance Logo"
-                        />{" "}
-                        Trisolaris
-                      </MenuItem>
-                      <MenuItem href="https://app.ref.finance/#token.0xshitzu.near|near">
-                        BUY on{" "}
-                        <img
-                          className="h-6 w-auto rounded-full mx-2"
-                          src={RefFinanceLogo.src}
-                          alt="Ref Finance Logo"
-                        />
-                        Ref
-                      </MenuItem>
-                      <MenuItem href="https://near.org/marior.near/widget/ShitzuMigrate">
-                        Migrate{" "}
-                        <img
-                          src={AuroraLogo.src}
-                          alt="Aurora Logo"
-                          className="h-6 mx-2 w-auto rounded-full"
-                        />
-                        →
-                        <img
-                          src={NearLogo.src}
-                          alt="near Logo"
-                          className="h-6 mx-2 w-auto rounded-full"
-                        />
-                      </MenuItem>
-                      <MenuItem href="https://twitter.com/shitzucommunity">
-                        <TwitterIcon className="h-6 w-6 mr-2 text-[#1da1f2]" />
-                        <span>Twitter</span>
-                      </MenuItem>
-                      <MenuItem href="https://t.me/Shitzu_Community">
-                        <TelegramIcon className="h-6 w-6 mr-2 text-[#2AABEE]" />
-                        <span>Telegram</span>
-                      </MenuItem>
-                      <MenuItem href="https://github.com/Shitzu-Apes">
-                        <GithubIcon className="h-6 w-6 mr-2 text-white" />
-                        <span>Github</span>
-                      </MenuItem>
-                    </Menu.Items>
-                  </Transition>
-                </Menu>
+                </div>
               </div>
             </div>
           </div>

@@ -79,7 +79,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} bg-black`}>
-        <Navbar />
+        <div className="w-full h-20 flex items-center">
+          <Navbar />
+        </div>
         {children}
         <Footer />
       </body>

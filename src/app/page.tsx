@@ -7,8 +7,13 @@ import FAQ from "@/components/FAQ";
 
 export default async function Home() {
   return (
-    <main className="w-full min-h-screen py-4">
-      <div className="w-full h-screen relative">
+    <main className="w-full py-4">
+      <div
+        className="w-full relative"
+        style={{
+          height: "calc(100vh - 5rem)",
+        }}
+      >
         <Hero />
 
         <div className="absolute bottom-0 left-0 w-full h-28 bg-gradient-to-t from-neutral-dark to-transparent" />
