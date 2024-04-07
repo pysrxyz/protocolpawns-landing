@@ -1,20 +1,11 @@
 "use client";
 
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Disclosure, Menu } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
-  Bars3Icon,
-  Squares2X2Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-import {
-  AuroraLogo,
-  GithubIcon,
-  NearLogo,
-  RefFinanceLogo,
+  NearIcon,
   ProtocolPawnLogo,
   TelegramIcon,
-  TrisolarisLogo,
   TwitterIcon,
 } from "@/components/Icons";
 import Link from "next/link";
@@ -93,24 +84,55 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as={Link}
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
+          <Disclosure.Panel className="sm:hidden z-30 bg-black h-screen fixed inset-0">
+            <div className="h-14 ml-auto w-fit mr-4 mt-4 mb-10">
+              <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <XMarkIcon className="block h-8 w-8" aria-hidden="true" />
+              </Disclosure.Button>
+            </div>
+            <div className="w-full">
+              <div className="space-y-1 px-2 pb-3 pt-2 flex flex-col justify-center itesm-center text-center">
+                {navigation.map((item) => (
+                  <Disclosure.Button
+                    key={item.name}
+                    as={Link}
+                    href={item.href}
+                    className={classNames(
+                      item.current ? "text-gray-300" : "text-white",
+                      "block px-3 py-2 text-2xl my-3"
+                    )}
+                    aria-current={item.current ? "page" : undefined}
+                  >
+                    {item.name}
+                  </Disclosure.Button>
+                ))}
+              </div>
+            </div>
+
+            <div className="w-fit mx-auto mt-16">
+              <div className="flex space-x-4">
+                {/* gradient bg to act like border of the button have gradient (from left gray to right white) */}
+                <div className="bg-gradient-to-r from-gray-800 via-neutral-600 to-neutral-500 rounded-lg w-36 p-0.5">
+                  <button className="bg-black hover:bg-transparent text-white px-2 py-3 rounded-lg w-full">
+                    Play Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-fit mx-auto mt-14 text-white font-light">
+              <h2 className="mb-4 text-center">Follow Us</h2>
+              <ul className="flex gap-10 items-center">
+                <li>
+                  <TwitterIcon className="w-8 h-8" />
+                </li>
+                <li className="h-fit">
+                  <NearIcon className="w-6 h-6" />
+                </li>
+                <li>
+                  <TelegramIcon className="w-8 h-8" />
+                </li>
+              </ul>
             </div>
           </Disclosure.Panel>
         </>

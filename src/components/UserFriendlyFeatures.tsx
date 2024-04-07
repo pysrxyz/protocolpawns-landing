@@ -5,7 +5,7 @@ export default function UserFriendlyFeatures() {
     <section className="py-12 px-4">
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
-          <h2 className="text-5xl font-bold text-white my-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-white my-4">
             Simple and easy to play
           </h2>
           <p className="text-lg text-gray-400">
