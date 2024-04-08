@@ -17,12 +17,12 @@ export default function BeginMatch() {
           <h1 className="text-3xl md:text-5xl font-bold text-white pb-5 md:pb-0">
             Begin your match
           </h1>
-          <p className="text-gray-400 text-lg md:text-lg text-center">
+          <p className="text-gray-400 text-lg md:text-lg text-center md:mt-10">
             Start your journey to become the best chess player.
           </p>
         </div>
 
-        <div className="flex gap-5 md:gap-10 flex-col-reverse md:flex-row w-full">
+        <div className="flex gap-5 md:gap-10 flex-col-reverse md:flex-row w-full md:w-fit">
           <button className="bg-transparent text-white px-4 py-4 rounded-lg border border-white min-w-40">
             Learn More
           </button>
