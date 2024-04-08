@@ -59,8 +59,6 @@ export function NearIcon({ className }: { className?: string }) {
       y="0px"
       viewBox="0 0 90.1 90"
       className={className}
-      // style="enable-background:new 0 0 90.1 90;"
-      // xml:space="preserve"
     >
       <path
         d="M72.2,4.6L53.4,32.5c-1.3,1.9,1.2,4.2,3,2.6L74.9,19c0.5-0.4,1.2-0.1,1.2,0.6v50.3c0,0.7-0.9,1-1.3,0.5l-56-67
@@ -74,10 +72,3 @@ export function NearIcon({ className }: { className?: string }) {
 }
 
 export { default as ProtocolPawnLogo } from "@/assets/icons/protocolpawn.svg";
-export { default as DexScreenerLogo } from "@/assets/dexscreener.png";
-export { default as NearLogo } from "@/assets/near.png";
-// export { default as AuroraLogo } from "@/assets/aurora.png";
-// export { default as RefFinanceLogo } from "@/assets/ref.png";
-// export { default as TrisolarisLogo } from "@/assets/trisolaris.png";
-// export { default as CoingeckoLogo } from "@/assets/coingecko.png";
-// export { default as NearBlocksLogo } from "@/assets/nearblocks.svg";
