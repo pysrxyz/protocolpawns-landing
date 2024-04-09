@@ -23,6 +23,7 @@ export default function Hero() {
           href={SOCIAL_MEDIA.social_media.near.url}
           className="flex justify-center items-center w-80 h-12 md:h-16 bg-white text-primary font-bold text-lg md:text-2xl rounded-2xl border border-white"
           target="_blank"
+          aria-label={MAIN_CONTENT.main.intro.button}
         >
           {MAIN_CONTENT.main.intro.button}
         </a>

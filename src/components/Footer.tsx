@@ -12,18 +12,20 @@ export default function Footer() {
       <div className="md:max-w-7xl mx-auto">
         <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8 md:gap-10">
           <div className="mx-auto md:mx-0 w-fit mb-8 md:mb-0 md:ml-5">
-            <a href={"/"}>
+            <a href={"/"} aria-label="Go to top">
               <img
                 src={ProtocolPawnLogo.src}
                 alt="ProtocolPawn Logo"
-                className="h-12 w-auto"
+                className="h-12 w-12"
               />
             </a>
           </div>
           <ul className="md:order-2 flex justify-evenly max-w-sm my-8 md:gap-10">
             {NAVIGATION.navigation.map((item) => (
               <li key={item.title} className="text-center text-sm leading-5">
-                <a href={`#${item.id}`}>{item.title}</a>
+                <a href={`#${item.id}`} aria-label={item.title}>
+                  {item.title}
+                </a>
               </li>
             ))}
           </ul>
@@ -32,6 +34,7 @@ export default function Footer() {
               href={SOCIAL_MEDIA.social_media.twitter.url}
               className={"rounded-md py-2 text-sm font-medium"}
               target="_blank"
+              aria-label="Twitter"
             >
               <TwitterIcon className="h-6 w-6 text-gray-100" />
             </a>
@@ -39,6 +42,7 @@ export default function Footer() {
               href={SOCIAL_MEDIA.social_media.telegram.url}
               className={"rounded-md py-2 text-sm font-medium"}
               target="_blank"
+              aria-label="Telegram"
             >
               <TelegramIcon className="h-6 w-6 text-gray-100" />
             </a>
@@ -46,6 +50,7 @@ export default function Footer() {
               href={SOCIAL_MEDIA.social_media.github.url}
               className={"rounded-md py-2 text-sm font-medium"}
               target="_blank"
+              aria-label="GitHub"
             >
               <GithubIcon className="h-6 w-6 text-gray-100" />
             </a>

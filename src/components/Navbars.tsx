@@ -51,6 +51,7 @@ export default function Navbar() {
               <Link
                 href={"/"}
                 className="flex flex-shrink-0 items-center text-white"
+                aria-label="Go to top"
               >
                 <img
                   className="h-8 w-8 mr-2"
@@ -72,6 +73,7 @@ export default function Navbar() {
                         "rounded-md px-3 py-2 text-sm font-medium"
                       )}
                       aria-current={item.current ? "page" : undefined}
+                      aria-label={item.name}
                     >
                       {item.name}
                     </Link>
@@ -87,6 +89,7 @@ export default function Navbar() {
                     href={SOCIAL_MEDIA.social_media.near.url}
                     className="flex items-center justify-center bg-black hover:bg-transparent text-white px-2 py-3 rounded-lg w-full"
                     target="_blank"
+                    aria-label="Play Now"
                   >
                     Play Now
                   </a>
@@ -112,6 +115,7 @@ export default function Navbar() {
                   "block px-3 py-2 text-2xl my-3"
                 )}
                 aria-current={item.current ? "page" : undefined}
+                aria-label={item.name}
               >
                 {item.name}
               </Link>
@@ -134,17 +138,29 @@ export default function Navbar() {
           <h2 className="mb-4 text-center">Follow Us</h2>
           <ul className="flex gap-10 items-center">
             <li>
-              <a href={SOCIAL_MEDIA.social_media.twitter.url} target="_blank">
+              <a
+                href={SOCIAL_MEDIA.social_media.twitter.url}
+                target="_blank"
+                aria-label="Twitter"
+              >
                 <TwitterIcon className="w-8 h-8" />
               </a>
             </li>
             <li className="h-fit">
-              <a href={SOCIAL_MEDIA.social_media.near.url} target="_blank">
+              <a
+                href={SOCIAL_MEDIA.social_media.near.url}
+                target="_blank"
+                aria-label="Near"
+              >
                 <NearIcon className="w-6 h-6" />
               </a>
             </li>
             <li>
-              <a href={SOCIAL_MEDIA.social_media.telegram.url} target="_blank">
+              <a
+                href={SOCIAL_MEDIA.social_media.telegram.url}
+                target="_blank"
+                aria-label="Telegram"
+              >
                 <TelegramIcon className="w-8 h-8" />
               </a>
             </li>
