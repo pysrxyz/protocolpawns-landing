@@ -28,8 +28,8 @@ export default function FAQ() {
                         height="20"
                         width="20"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         stroke-width="2"
                         viewBox="0 0 24 24"
                       >

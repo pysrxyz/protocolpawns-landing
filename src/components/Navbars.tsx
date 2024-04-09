@@ -53,7 +53,7 @@ export default function Navbar() {
                 className="flex flex-shrink-0 items-center text-white"
               >
                 <img
-                  className="h-8 w-auto mr-2"
+                  className="h-8 w-8 mr-2"
                   src={ProtocolPawnLogo.src}
                   alt="ProtocolPawn Logo"
                 />
