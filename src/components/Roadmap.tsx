@@ -35,6 +35,15 @@ export default function Roadmap() {
               </li>
             ))}
           </ul>
+
+          <a
+            href={MAIN_CONTENT.roadmap.button.link}
+            target="_blank"
+            rel="noreferrer"
+            className="flex ml-auto mt-8 text-sky-400 hover:text-white mr-3"
+          >
+            {MAIN_CONTENT.roadmap.button.text} &rarr;
+          </a>
         </div>
       </div>
     </section>

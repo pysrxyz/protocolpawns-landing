@@ -42,7 +42,11 @@
         "title": "Fungible Token",
         "description": "There will be a play2earn FT that can earn protocol revenue from wager matches and betting. It needs to be paired in an LP and sold to the protocol to earn revenue."
       }
-    ]
+    ],
+    "button": {
+      "link": "https://github.com/orgs/Protocol-Pawns/projects/1/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C67770683%2C67782475%2C%22Labels%22%2C%22Status%22%5D&sliceBy%5BcolumnId%5D=67770683",
+      "text": "View Full Roadmap"
+    }
   },
   "begin_match": {
     "title": "Begin a Match",

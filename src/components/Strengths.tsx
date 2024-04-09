@@ -3,10 +3,7 @@ import { MAIN_CONTENT } from "@/content";
 
 export default function Strengths() {
   return (
-    <section
-      id={"our_strength"}
-      className="w-full-h-full py-20 px-4 bg-neutral-dark"
-    >
+    <section id={"our_strength"} className="w-full h-full py-20 px-4">
       <div className="flex flex-col items-center justify-center">
         <h2 className="text-center flex flex-col items-center">
           <div className="text-green-500 ">
