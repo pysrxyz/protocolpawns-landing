@@ -7,3 +7,7 @@
     text-wrap: balance;
   }
 }
+
+summary::-webkit-details-marker {
+  display: none;
+}
