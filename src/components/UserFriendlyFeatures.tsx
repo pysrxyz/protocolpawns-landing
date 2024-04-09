@@ -2,7 +2,7 @@ import ChessboardImage from "@/assets/images/chessboard.png";
 
 export default function UserFriendlyFeatures() {
   return (
-    <section className="py-12 px-4">
+    <section className="py-12 px-4 bg-[#222]">
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white my-4">

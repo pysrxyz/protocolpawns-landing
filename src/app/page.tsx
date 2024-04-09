@@ -19,15 +19,15 @@ export default async function Home() {
         <div className="absolute bottom-0 left-0 w-full h-28 bg-gradient-to-t from-neutral-dark to-transparent" />
       </div>
 
-      <div className="w-full min-h-screen">
+      <div className="w-full min-h-screen bg-neutral-dark">
         <Strengths />
       </div>
 
-      <div className="w-full min-h-screen">
+      <div className="w-full bg-[#222]">
         <UserFriendlyFeatures />
       </div>
 
-      <div className="w-full pb-20">
+      <div className="w-full py-20">
         <Roadmap />
       </div>
 
