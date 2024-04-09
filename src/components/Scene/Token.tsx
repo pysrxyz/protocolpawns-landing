@@ -19,11 +19,7 @@ import ProtocolPawnTokenDecal from "@/assets/scene/protocolpawn-token-decal.svg"
 
 const size = 223;
 
-export default function ShitzuToken({
-  tokenWidth = 0.075,
-}: {
-  tokenWidth?: number;
-}) {
+export default function Token({ tokenWidth = 0.075 }: { tokenWidth?: number }) {
   const ref = useRef<Group>(null);
 
   const protocolPawnSVG = useLoader(
