@@ -1,0 +1,67 @@
+{
+  "main": {
+    "intro": {
+      "title": "Have fun & earn tokens with Chess-on-chain",
+      "description": "Challenge other wallets to play against you or play against an AI.\nEarn points by playing and winning.\nComplete recurring quests and collect achievements!",
+      "button": "Play Now"
+    },
+    "our_strength": {
+      "title": "Our Strength",
+      "subtitle": "What makes Protocal Pawns special?",
+      "description": "There are very few games that can run fully on-chain, chess can be one of those. There will be a play2earn FT, that serves as a way to earn protocol revenue from wager matches and others."
+    },
+    "features": [
+      {
+        "title": "Transparency",
+        "description": "The transparency of blockchain websites brings a whole new level of excitement to the chess game. Playing chess on a blockchain give you full transparency of what players have been doing."
+      },
+      {
+        "title": "Well-known game",
+        "description": "Chess is probably one of the most played and most well known games around the world. It is easy for whether a beginner or an expert player to start. Anyone can start enjoying it in no time."
+      }
+    ],
+    "easy_play": {
+      "title": "Simple and easy to play",
+      "description": "Our chess game offers a simple and easy way to play while maintaining a familiar look and feel.\nThe traditional chess look gives players a sense of familiarity and comfort.\nThis familiar look and feel not only make our chess game more enjoyable for experienced players, but also help to bridge the gap between physical and digital chess for those who are new to the game."
+    }
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "subtitle": "Develop to the Next Steps",
+    "description": "In order to enhance the user experience the development roadmap for our chess game update consists of several key milestones.",
+    "steps": [
+      {
+        "title": "Telegram Wallet",
+        "description": "The immediate next step for Protocol Pawns is to launch inside the Near Telegram wallet from HOT. There is an app store dedicated to games."
+      },
+      {
+        "title": "Money Match",
+        "description": "There will also be money matches and a betting feature. Those are technically also implemented in the smart contract, but haven’t be launched yet."
+      },
+      {
+        "title": "Fungible Token",
+        "description": "There will be a play2earn FT that can earn protocol revenue from wager matches and betting. It needs to be paired in an LP and sold to the protocol to earn revenue."
+      }
+    ]
+  },
+  "begin_match": {
+    "title": "Begin a Match",
+    "description": "Start your journey to become the best chess player.",
+    "button": "Start Match",
+    "subbutton": "Learn More"
+  },
+  "FAQ": {
+    "title": "FAQs",
+    "subtitle": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "How can I earn on-chain points?",
+        "answer": "You can earn on-chain points by playing and winning games. The more games you win, the more points you earn."
+      },
+      {
+        "question": "How can I contact support?",
+        "answer": "Telegram, Twitter, and Near Social."
+      }
+    ]
+  }
+}

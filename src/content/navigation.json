@@ -1,0 +1,8 @@
+{
+  "logo": "Protocol Pawns",
+  "navigation": [
+    { "id": "our_strength", "title": "Our Strength" },
+    { "id": "roadmap", "title": "Roadmap" },
+    { "id": "faqs", "title": "FAQs" }
+  ]
+}

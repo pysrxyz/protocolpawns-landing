@@ -1,42 +1,20 @@
 "use client";
 
+import { MAIN_CONTENT } from "@/content";
 import { Disclosure } from "@headlessui/react";
-import {
-  ChevronDownIcon,
-  ChevronUpIcon,
-  MinusSmallIcon,
-  PlusSmallIcon,
-} from "@heroicons/react/24/outline";
-
-const faqs = [
-  {
-    question: "How can I earn on-chain points?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus eget nunc. Donec auctor, nunc nec ultricies ultricies, nunc nunc ultricies.",
-  },
-  {
-    question: "How can I contact support?",
-    answer: "You can contact support via telegram",
-  },
-  {
-    question: "How does your game align with the NDC and Gaming WG KPIs?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus eget nunc. Donec auctor, nunc nec ultricies ultricies, nunc nunc ultricies.",
-  },
-];
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
 
 export default function FAQ() {
   return (
-    <div className="">
+    <section id="faqs" className="">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto">
-          <div className="text-violet-400">Roadmap</div>
+          <div className="text-violet-400">{MAIN_CONTENT.FAQ.title}</div>
           <h2 className="text-white text-3xl md:text-5xl font-bold my-4">
-            {" "}
-            Frequently asked questions
+            {MAIN_CONTENT.FAQ.subtitle}
           </h2>
           <dl className="mt-10 space-y-6">
-            {faqs.map((faq) => (
+            {MAIN_CONTENT.FAQ.questions.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
                   <dt
@@ -74,6 +52,6 @@ export default function FAQ() {
           </dl>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

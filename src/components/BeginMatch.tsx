@@ -1,4 +1,5 @@
 import KnightBackground from "@/assets/images/knight-bg.png";
+import { MAIN_CONTENT } from "@/content";
 
 export default function BeginMatch() {
   return (
@@ -15,20 +16,20 @@ export default function BeginMatch() {
       <div className="h-full flex flex-col items-center justify-between md:justify-center gap-10">
         <div className="text-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white pb-5 md:pb-0">
-            Begin your match
+            {MAIN_CONTENT.begin_match.title}
           </h1>
           <p className="text-gray-400 text-lg md:text-lg text-center md:mt-10">
-            Start your journey to become the best chess player.
+            {MAIN_CONTENT.begin_match.description}
           </p>
         </div>
 
         <div className="flex gap-5 md:gap-10 flex-col-reverse md:flex-row w-full md:w-fit">
           <button className="bg-transparent text-white px-4 py-4 rounded-lg border border-white min-w-40">
-            Learn More
+            {MAIN_CONTENT.begin_match.subbutton}
           </button>
 
           <button className="bg-white text-primary px-4 py-4 rounded-lg min-w-40">
-            Play Now
+            {MAIN_CONTENT.begin_match.button}
           </button>
         </div>
       </div>

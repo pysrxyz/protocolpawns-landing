@@ -4,6 +4,7 @@ import {
   TelegramIcon,
   TwitterIcon,
 } from "@/components/Icons";
+import { NAVIGATION, SOCIAL_MEDIA } from "@/content";
 
 export default function Footer() {
   return (
@@ -11,34 +12,38 @@ export default function Footer() {
       <div className="md:max-w-7xl mx-auto">
         <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8 md:gap-10">
           <div className="mx-auto md:mx-0 w-fit mb-8 md:mb-0 md:ml-5">
-            <img
-              src={ProtocolPawnLogo.src}
-              alt="ProtocolPawn Logo"
-              className="h-12 w-auto"
-            />
+            <a href={"/"}>
+              <img
+                src={ProtocolPawnLogo.src}
+                alt="ProtocolPawn Logo"
+                className="h-12 w-auto"
+              />
+            </a>
           </div>
           <ul className="md:order-2 flex justify-evenly max-w-sm my-8 md:gap-10">
-            <li className="text-center text-sm leading-5">Our Strength</li>
-            <li className="text-center text-sm leading-5">Roadmap</li>
-            <li className="text-center text-sm leading-5">FAQs</li>
+            {NAVIGATION.navigation.map((item) => (
+              <li key={item.title} className="text-center text-sm leading-5">
+                <a href={`#${item.id}`}>{item.title}</a>
+              </li>
+            ))}
           </ul>
           <div className="flex justify-center space-x-6 md:order-2">
             <a
-              href={"https://twitter.com/shitzucommunity"}
+              href={SOCIAL_MEDIA.social_media.twitter.url}
               className={"rounded-md py-2 text-sm font-medium"}
               target="_blank"
             >
               <TwitterIcon className="h-6 w-6 text-gray-100" />
             </a>
             <a
-              href={"https://t.me/Shitzu_Community"}
+              href={SOCIAL_MEDIA.social_media.telegram.url}
               className={"rounded-md py-2 text-sm font-medium"}
               target="_blank"
             >
               <TelegramIcon className="h-6 w-6 text-gray-100" />
             </a>
             <a
-              href={"https://github.com/Shitzu-Apes"}
+              href={SOCIAL_MEDIA.social_media.github.url}
               className={"rounded-md py-2 text-sm font-medium"}
               target="_blank"
             >

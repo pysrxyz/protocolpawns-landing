@@ -9,12 +9,13 @@ import {
   TwitterIcon,
 } from "@/components/Icons";
 import Link from "next/link";
+import { NAVIGATION, SOCIAL_MEDIA } from "@/content";
 
-const navigation = [
-  { name: "Our Strength", href: "/#strength", current: false },
-  { name: "Roadmap", href: "/#roadmap", current: false },
-  { name: "FAQs", href: "/#FAQ", current: false },
-];
+const navigation = NAVIGATION.navigation.map((item) => ({
+  name: item.title,
+  href: `#${item.id}`,
+  current: false,
+}));
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -75,9 +76,13 @@ export default function Navbar() {
                 <div className="hidden sm:flex space-x-4">
                   {/* gradient bg to act like border of the button have gradient (from left gray to right white) */}
                   <div className="bg-gradient-to-r from-gray-800 via-neutral-600 to-neutral-500 rounded-lg w-36 p-0.5">
-                    <button className="bg-black hover:bg-transparent text-white px-2 py-3 rounded-lg w-full">
+                    <a
+                      href={SOCIAL_MEDIA.social_media.near.url}
+                      className="flex items-center justify-center bg-black hover:bg-transparent text-white px-2 py-3 rounded-lg w-full"
+                      target="_blank"
+                    >
                       Play Now
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -124,13 +129,25 @@ export default function Navbar() {
               <h2 className="mb-4 text-center">Follow Us</h2>
               <ul className="flex gap-10 items-center">
                 <li>
-                  <TwitterIcon className="w-8 h-8" />
+                  <a
+                    href={SOCIAL_MEDIA.social_media.twitter.url}
+                    target="_blank"
+                  >
+                    <TwitterIcon className="w-8 h-8" />
+                  </a>
                 </li>
                 <li className="h-fit">
-                  <NearIcon className="w-6 h-6" />
+                  <a href={SOCIAL_MEDIA.social_media.near.url} target="_blank">
+                    <NearIcon className="w-6 h-6" />
+                  </a>
                 </li>
                 <li>
-                  <TelegramIcon className="w-8 h-8" />
+                  <a
+                    href={SOCIAL_MEDIA.social_media.telegram.url}
+                    target="_blank"
+                  >
+                    <TelegramIcon className="w-8 h-8" />
+                  </a>
                 </li>
               </ul>
             </div>
