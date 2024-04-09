@@ -10,6 +10,7 @@ export default function BeginMatch() {
           src={KnightBackground.src}
           alt="Hero background"
           className="w-full h-full object-cover md:object-contain"
+          loading="lazy"
         />
       </div>
 
