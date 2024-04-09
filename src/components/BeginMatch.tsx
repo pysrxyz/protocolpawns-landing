@@ -28,7 +28,7 @@ export default function BeginMatch() {
             {MAIN_CONTENT.begin_match.subbutton}
           </button>
 
-          <button className="bg-white text-primary px-4 py-4 rounded-lg min-w-40">
+          <button className="bg-white text-primary px-4 py-4 rounded-lg min-w-40 font-semibold">
             {MAIN_CONTENT.begin_match.button}
           </button>
         </div>
