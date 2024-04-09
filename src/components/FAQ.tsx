@@ -13,39 +13,41 @@ export default function FAQ() {
           <h2 className="text-white text-3xl md:text-5xl font-bold my-4">
             {MAIN_CONTENT.FAQ.subtitle}
           </h2>
-          <dl className="mt-10 space-y-6">
+          <dl className="mt-10 space-y-12">
             {MAIN_CONTENT.FAQ.questions.map((faq) => (
-              <Disclosure as="div" key={faq.question} className="pt-6">
+              <Disclosure
+                as="div"
+                key={faq.question}
+                className="bg-neutral-800 rounded-lg hover:bg-neutral-600"
+              >
                 {({ open }) => (
-                  <dt
-                    className={`bg-neutral-800 px-6 rounded-lg py-4 md:py-8 ${
-                      !open && "hover:bg-neutral-600"
-                    }`}
-                  >
-                    <Disclosure.Button className="flex w-full items-start justify-between text-left text-white">
-                      <span className="text-lg font-semibold leading-7">
-                        {faq.question}
-                      </span>
-                      <span className="ml-6 flex h-7 items-center">
-                        {open ? (
-                          <ChevronUpIcon
-                            className="h-6 w-"
-                            aria-hidden="true"
-                          />
-                        ) : (
-                          <ChevronDownIcon
-                            className="h-6 w-6"
-                            aria-hidden="true"
-                          />
-                        )}
-                      </span>
+                  <>
+                    <Disclosure.Button className={`w-full px-6 pt-4 md:py-8`}>
+                      <dt className="flex w-full items-start justify-between text-left text-white">
+                        <span className="text-lg font-semibold leading-7">
+                          {faq.question}
+                        </span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <ChevronUpIcon
+                              className="h-6 w-"
+                              aria-hidden="true"
+                            />
+                          ) : (
+                            <ChevronDownIcon
+                              className="h-6 w-6"
+                              aria-hidden="true"
+                            />
+                          )}
+                        </span>
+                      </dt>
                     </Disclosure.Button>
-                    <Disclosure.Panel as="dd" className="mt-10 pr-12">
+                    <Disclosure.Panel as="dd" className="pr-12 pb-6 px-6">
                       <p className="text-base leading-7 text-gray-300">
                         {faq.answer}
                       </p>
                     </Disclosure.Panel>
-                  </dt>
+                  </>
                 )}
               </Disclosure>
             ))}
