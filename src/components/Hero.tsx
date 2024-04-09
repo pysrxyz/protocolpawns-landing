@@ -12,7 +12,7 @@ export default function Hero() {
           <div className="w-full max-w-3xl text-center leading-normal">
             {MAIN_CONTENT.main.intro.title}
           </div>
-          <div className="text-sm md:text-lg max-w-sm md:max-w-xl font-light text-center text-white mt-2 leading-relaxed md:mx-auto">
+          <div className="text-sm md:text-lg max-w-sm md:max-w-xl font-light text-center text-white mt-2 leading-relaxed mx-auto">
             {MAIN_CONTENT.main.intro.description}
           </div>
         </div>
