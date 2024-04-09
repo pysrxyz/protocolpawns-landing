@@ -1,4 +1,4 @@
-import ChessboardImage from "@/assets/images/chessboard.png";
+import ChessboardImage from "@/assets/images/chessboard.webp";
 
 export default function UserFriendlyFeatures() {
   return (

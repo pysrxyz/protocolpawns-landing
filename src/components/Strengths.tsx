@@ -1,4 +1,4 @@
-import FeaturesHeroImage from "@/assets/images/features-hero.png";
+import FeaturesHeroImage from "@/assets/images/features-hero.webp";
 import { MAIN_CONTENT } from "@/content";
 
 export default function Strengths() {

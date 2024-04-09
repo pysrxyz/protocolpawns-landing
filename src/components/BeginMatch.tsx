@@ -1,4 +1,4 @@
-import KnightBackground from "@/assets/images/knight-bg.png";
+import KnightBackground from "@/assets/images/knight-bg.webp";
 import { MAIN_CONTENT } from "@/content";
 
 export default function BeginMatch() {
