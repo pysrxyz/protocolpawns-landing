@@ -30,7 +30,7 @@ export default function FAQ() {
                         stroke="currentColor"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        stroke-width="2"
+                        strokeWidth="2"
                         viewBox="0 0 24 24"
                       >
                         <polyline points="6 9 12 15 18 9"></polyline>
