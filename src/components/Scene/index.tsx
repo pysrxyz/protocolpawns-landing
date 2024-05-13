@@ -3,10 +3,32 @@
 import { Canvas } from "@react-three/fiber";
 import Token from "./Token";
 import Chessboard from "./Chessboard";
-import { OrbitControls } from "@react-three/drei";
+import { useEffect, useState } from "react";
+import { WebGL } from "three/examples/jsm/Addons.js";
+
+import HeroBG from "@/assets/images/hero.webp";
 
 export default function Scene() {
-  return (
+  const [webGLWarning, setWebGLWarning] = useState<string | null>(null);
+
+  useEffect(() => {
+    // check web-gl support and or enable it
+    if (!WebGL.isWebGLAvailable()) {
+      const warning = WebGL.getWebGLErrorMessage();
+
+      setWebGLWarning(warning.innerText);
+    }
+  }, []);
+
+  return webGLWarning !== null ? (
+    <div className="h-full w-full">
+      <img
+        src={HeroBG.src}
+        alt="Protocol Pawn Hero Static Image"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  ) : (
     <Canvas>
       <group position={[0, -0.25, 0]}>
         <Token />
